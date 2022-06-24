@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ProjectBogdan</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="favourite_list">Favourite List</string>
+    <string name="shopping_list">Shopping List</string>
+    <string name="profile">Profile</string>
+    <string name="sign_in">Sign In</string>
+    <string name="do_not_have_an_account_press_here_to_register">Do not have an account? Press here to register.</string>
+    <string name="register">Register</string>
+    <string name="logout">LogOut</string>
+    <string name="add_to_shopping_list_0_products">Add to shopping list 0 products</string>
+    <string name="add_to_shopping_list">Add to shopping list</string>
+    <string name="storage">Storage</string>
+    <string name="finish_shopping">Finish Shopping</string>
+</resources>

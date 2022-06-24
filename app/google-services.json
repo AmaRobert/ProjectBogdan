@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "315681750603",
+    "project_id": "projectbogdan-ec3c3",
+    "storage_bucket": "projectbogdan-ec3c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315681750603:android:3ffb45dea474a8cae3d7ce",
+        "android_client_info": {
+          "package_name": "com.example.projectbogdan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315681750603-pc1tr1dihh0qvfmuaf7t931bhbt0jrmb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtbRxkasVj4vokxeN6uQiJU_DviFCgDAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315681750603-pc1tr1dihh0qvfmuaf7t931bhbt0jrmb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

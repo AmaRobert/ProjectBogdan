@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_camera">
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.example.projectbogdan.ui.home.CameraFragment"
+        android:label="Camera"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/navigation_favourite_list"
+        android:name="com.example.projectbogdan.ui.favoriteList.FavoriteListFragment"
+        android:label="@string/favourite_list"
+        tools:layout="@layout/fragment_favorite_list" />
+
+    <fragment
+        android:id="@+id/navigation_shopping_list"
+        android:name="com.example.projectbogdan.ui.shopingList.ShoppingListFragment"
+        android:label="@string/shopping_list"
+        tools:layout="@layout/fragment_shopping_list" >
+        <action
+            android:id="@+id/action_navigation_shopping_list_to_productInfoFragment"
+            app:destination="@id/productInfoFragment"
+            app:popUpTo="@id/navigation_shopping_list"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.projectbogdan.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.projectbogdan.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="product"
+            app:argType="com.example.projectbogdan.data.model.ShoppingProduct" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_storage"
+        android:name="com.example.projectbogdan.ui.storage.StorageFragment"
+        android:label="Storage"
+        tools:layout="@layout/fragment_storage" />
+    <fragment
+        android:id="@+id/productInfoFragment"
+        android:name="com.example.projectbogdan.ui.productInfoPage.ProductInfoFragment"
+        android:label="Product Info"
+        tools:layout="@layout/fragment_product_info" >
+        <argument
+            android:name="product"
+            app:argType="com.example.projectbogdan.data.model.ShoppingProduct" />
+        <action
+            android:id="@+id/action_productInfoFragment_to_navigation_shopping_list"
+            app:destination="@id/navigation_shopping_list" />
+    </fragment>
+</navigation>

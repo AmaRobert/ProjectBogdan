@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".ui.productInfoPage.ProductInfoFragment">
+
+    <TextView
+        android:id="@+id/textViewNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Product Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/textViewNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewNameLabel" />
+
+    <TextView
+        android:id="@+id/textViewCategoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Category:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameLabel" />
+
+
+    <TextView
+        android:id="@+id/textViewCategoryValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Product Category"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCategoryLabel"
+        app:layout_constraintStart_toEndOf="@+id/textViewCategoryLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewCategoryLabel" />
+
+    <TextView
+        android:id="@+id/textViewRatingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rating:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCategoryLabel" />
+
+
+    <TextView
+        android:id="@+id/textViewRatingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="50%"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRatingLabel"
+        app:layout_constraintStart_toEndOf="@+id/textViewRatingLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewRatingLabel" />
+
+    <TextView
+        android:id="@+id/textViewQuantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Quantity:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRatingLabel" />
+
+    <EditText
+        android:id="@+id/textViewQuantityValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewQuantityLabel"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuantityLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewQuantityLabel" />
+
+    <TextView
+        android:id="@+id/textViewMentionsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mentions:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuantityLabel" />
+
+    <EditText
+        android:id="@+id/textViewMentionsValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLines="6"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMentionsLabel" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewMentionsValue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
